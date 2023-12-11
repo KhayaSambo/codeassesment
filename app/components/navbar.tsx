@@ -1,20 +1,38 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
-export default function  Navbar () {
-    return (
+export default function Navbar() {
+  return (
+    <>
+      <div className="bg">
         <div className="navbar">
-        <div className="logo">
-          <Image src="logo.png" alt="Brand logo" />
+          <div className="logo">
+            <Image
+              src="assets/logo.svg"
+              width={100}
+              height={100}
+              alt="Brand logo"
+            />
+          </div>
+          <ul className="nav-links">
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Industries</a>
+            </li>
+            <li>
+              <a href="#">Cases</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <a href="#" className="cta">
+            Let's Talk
+          </a>
         </div>
-        <ul className="nav-links">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Industries</a></li>
-          <li><a href="#">Cases</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#" className="cta">Let's Talk</a></li>
-        </ul>
       </div>
-    );
-};
-
+    </>
+  );
+}
