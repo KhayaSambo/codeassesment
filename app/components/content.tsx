@@ -5,7 +5,7 @@ import styles from "./content.module.css";
 function Content() {
   return (
     <>
-      <div className={styles.container}>
+      <div className='container'>
         
         <div className='mini'>
         

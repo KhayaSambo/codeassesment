@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Content from "./components/content";
+import CaseStudies from "./components/casestudies";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       />
       <div className="bodyBlock">
         <Content />
+        <CaseStudies />
       </div>
     </main>
   );

@@ -58,7 +58,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+.container {
+ 
+  margin: 0 auto;
+  padding: 20px;
+ 
+}
 /* CSS code for the navbar */
 .bg {
   
