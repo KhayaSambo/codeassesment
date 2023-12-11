@@ -12,20 +12,46 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: white;
+}
+
+.bodyBlock{
+
+  margin: 80px;
 }
 
 body {
   font-family: var(--font-mono);
   font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f0f0f0;
+
+
+}
+.mini {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  margin-bottom: 40px;
+
+}
+h1 {
+  color: #242424;
+  text-align: left;
+  font-size: 2.5rem;
+ 
+}
+hr {
+  border: none;
+  height: 4px;
+  width:40px;
+  background: #d100c9;
 }
 
 a {
@@ -78,10 +104,11 @@ a {
 }
 
 .cta {
-  background-color: #f0f0f0;
-  color: #3a0f6c;
+  background-color: #70259B;
+  color: #f0f0f0;
   padding: 10px 20px;
   border-radius: 20px;
+  font-weight: 700px;
 
 }
 
