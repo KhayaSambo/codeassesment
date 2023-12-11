@@ -30,7 +30,8 @@ function CaseStudies() {
     <>
       <div className="container">
         <div className="mini">
-          <hr /> Case Studies
+          <hr /> 
+          <span>Case Studies </span>
         </div>
         <div className={styles.services}>
             {/* map through the data array and render a CaseContainer for each object */}

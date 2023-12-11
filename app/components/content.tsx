@@ -9,7 +9,8 @@ function Content() {
         
         <div className='mini'>
         
-            <hr/> What we do
+            <hr/>
+            <span> What we do</span>
             </div>
         <h1>
           We offer a complete range of bespoke design and development services

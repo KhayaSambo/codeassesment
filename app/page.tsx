@@ -4,6 +4,7 @@ import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Content from "./components/content";
 import CaseStudies from "./components/casestudies";
+import Brands from "./components/brands";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <div className="bodyBlock">
         <Content />
         <CaseStudies />
+        <Brands />
       </div>
     </main>
   );

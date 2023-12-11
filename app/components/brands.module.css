@@ -1,0 +1,16 @@
+/* create a container class for the image and the component */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+
+  
+  /* create a class for the image elements */
+.img {
+    width: 100px;
+    height: 100px;
+    margin: 4px;
+  }
+  
