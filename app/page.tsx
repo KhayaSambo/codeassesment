@@ -5,6 +5,7 @@ import Hero from "./components/hero";
 import Content from "./components/content";
 import CaseStudies from "./components/casestudies";
 import Brands from "./components/brands";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
         <Content />
         <CaseStudies />
         <Brands />
+        
       </div>
+      <Footer/>
     </main>
   );
 }
