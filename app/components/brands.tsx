@@ -1,8 +1,11 @@
-// import React and the Grid component from react-grid-layout
 import React from "react";
 import styles from "./brands.module.css";
 
-// create an array of objects that represent the logos
+/**
+ * Represents an array of objects that represent the logos.
+ * Each logo object contains the source and alternative text.
+ * Left the data here instead of fetching it from an API to simplify access and readability.
+ */
 const logos = [
   { src: "assets/brands/visa.svg", alt: "VISA" },
   { src: "assets/brands/tyme.svg", alt: "TymeBank" },
@@ -21,31 +24,25 @@ const logos = [
   { src: "assets/brands/bbc.svg", alt: "BBC" },
 ];
 
-// create a function component that renders the image grid
+/**
+ * Renders the image grid of trusted brands.
+ */
 const Brands = () => {
-
-
-  // return the JSX element
   return (
     <div className='container'>
-           <div className="heading-tab">
-          <hr /> 
-          <span>You'll be in good company</span>
-        </div>
-   
-        <h1>Trusted by leading brands</h1>
-     
-      {/* render the grid container with flexbox */}
+      <div className="heading-tab">
+        <hr /> 
+        <span>You'll be in good company</span>
+      </div>
+      <h1>Trusted by leading brands</h1>
       <div className="grid">
-        {/* map each logo to an image element */}
+        {/* Decided to go with a dynamic approach to optimise the layout and to write less code */}
         {logos.map((logo, index) => (
           <img key={index} src={logo.src} alt={logo.alt} />
         ))}
       </div>
     </div>
-    
   );
 };
 
 export default Brands;
-

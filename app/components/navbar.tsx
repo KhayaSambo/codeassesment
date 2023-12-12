@@ -10,7 +10,7 @@ export default function Navbar() {
             <Image
               src="assets/logo.svg"
               width={100}
-              height={100}
+              height={30}
               alt="Brand logo"
             />
           </div>
@@ -28,7 +28,7 @@ export default function Navbar() {
               <a href="#">Contact</a>
             </li>
           </ul>
-          <a href="#" className="cta">
+          <a href="#" className="btn-secondary">
             Let's Talk
           </a>
         </div>

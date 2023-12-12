@@ -6,8 +6,8 @@ import CaseContainer from "./casecontainers";
 
 function CaseStudies() {
       // create a state variable to store the data from the API
-  const [data, setData] = useState(  [  {
-    "imageUrl": "Loading",
+  const [data, setData] = useState(  [{
+    "imageUrl": "./assets/logo.svg",
     "description": "Loading",
     "title": "Loading"
 },]);
@@ -35,12 +35,17 @@ function CaseStudies() {
         </div>
         <div className={styles.services}>
             {/* map through the data array and render a CaseContainer for each object */}
-            {data.map((item) => {
-                return (
-                <CaseContainer title={item.title} description={item.description} imageUrl={item.imageUrl} />
-                );
-            })}
-       
+            {data[0].title !="Loading" ? (
+              data.map((item) => (
+                <CaseContainer
+                  title={item.title}
+                  description={item.description}
+                  imageUrl={item.imageUrl}
+                />
+              ))
+            ) : (
+              <p>Loading...</p>
+            )}
    
         </div>
       </div>
