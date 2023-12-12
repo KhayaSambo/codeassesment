@@ -29,7 +29,7 @@ function CaseStudies() {
   return (
     <>
       <div className="container">
-        <div className="mini">
+        <div className="heading-tab">
           <hr /> 
           <span>Case Studies </span>
         </div>

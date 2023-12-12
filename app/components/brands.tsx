@@ -28,7 +28,7 @@ const Brands = () => {
   // return the JSX element
   return (
     <div className='container'>
-           <div className="mini">
+           <div className="heading-tab">
           <hr /> 
           <span>You'll be in good company</span>
         </div>

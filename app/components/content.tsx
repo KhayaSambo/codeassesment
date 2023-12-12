@@ -7,7 +7,7 @@ function Content() {
     <>
       <div className='container'>
         
-        <div className='mini'>
+        <div className='heading-tab'>
         
             <hr/>
             <span> What we do</span>
