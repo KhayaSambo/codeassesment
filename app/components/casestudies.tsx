@@ -34,15 +34,24 @@ function CaseStudies() {
           <span>Case Studies </span>
         </div>
         <div className={styles.services}>
+          
             {/* map through the data array and render a CaseContainer for each object */}
+            
             {data[0].title !="Loading" ? (
+             
               data.map((item) => (
+               
                 <CaseContainer
                   title={item.title}
                   description={item.description}
                   imageUrl={item.imageUrl}
+
                 />
-              ))
+              
+               
+              )
+             )
+            
             ) : (
               <p>Loading...</p>
             )}

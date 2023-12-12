@@ -1,20 +1,19 @@
 /* create a container class for the image and the component */
 .container {
-    position: relative;
-    width: 20rem;
-    height: 20rem;
+
+  position: relative;
+    width: 320px;
+    height: 320px;
     margin-top: 1.25rem;
-    
-   
-  
+    box-sizing: border-box;
+    margin: 10px;
   }
+
+
   
   /* create a class for the image */
 .imageContainer {
     height: 100%;
-    width: 100%;
-    position: relative;
-    box-sizing: border-box;
     overflow: hidden;
 
 }
@@ -29,13 +28,16 @@
 }
 
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: left;
-  
-    
-  }
+  height: 100%;
+  flex-wrap: nowrap;
+  display: grid;
+  grid-auto-flow: column;
+ 
+  overflow-x: scroll; /* Change overflow property to overflow-x */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  white-space: nowrap;
+  padding: 10px;
+}
   
   
   /* create a class for the text overlay */
@@ -43,8 +45,10 @@
     position: absolute;
     color: white;
     left:0;
-    top: 12rem;
-    padding: 1.5rem;
+    top: 13rem;
+    padding: 1.1rem;
+    white-space: wrap ;
+    
     background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
    
   
