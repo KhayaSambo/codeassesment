@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 
+//I decided to make the hero component dynamic to make it easier to reuse
 const Hero = ({ title, imageUrl, description }:  {
     title: string;
     imageUrl: string;
@@ -10,16 +11,22 @@ const Hero = ({ title, imageUrl, description }:  {
     const animationRef = useRef(null);
     const descriptionRef = useRef(null);
 
+
+//Handle animations for description and title on scroll for a parallax effect
     useEffect(() => {
         const animationElement = animationRef.current;
         const descriptionElement = descriptionRef.current;
 
-        gsap.from(animationElement, { x: -200, opacity: 0, duration: 1, ease: "ease-in" });
-        gsap.to(animationElement, { x: 0, opacity: 1, duration: 1, ease: "ease-in", delay: 1 });
-        gsap.from(descriptionElement, { y: 50, opacity: 0, duration: 1, ease: "ease-in", delay: 1 });
-        gsap.to(descriptionElement, { y: 0, opacity: 1, duration: 1, ease: "ease-in", delay: 2 });
+        const handleScroll = () => {
+            const scrollY = window.scrollY;
+            gsap.to(animationElement, { y: -scrollY * 0.3, ease: "power1.out" });
+            gsap.to(descriptionElement, { y: -scrollY * 0.2, ease: "power1.out" });
+        };
+
+        window.addEventListener('scroll', handleScroll);
 
         return () => {
+            window.removeEventListener('scroll', handleScroll);
             gsap.killTweensOf(animationElement);
             gsap.killTweensOf(descriptionElement);
         };

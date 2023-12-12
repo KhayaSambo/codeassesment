@@ -36,7 +36,7 @@ const Brands = () => {
       </div>
       <h1>Trusted by leading brands</h1>
       <div className="grid">
-        {/* Decided to go with a dynamic approach to optimise the layout and to write less code */}
+        {/* Decided to go with a dynamic approach to optimise the layout and to write less */}
         {logos.map((logo, index) => (
           <img key={index} src={logo.src} alt={logo.alt} />
         ))}
